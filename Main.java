@@ -1,5 +1,6 @@
-public static void Main(String args[]){
-		System.out.println("1");
-		Ani bujo = new Ani();
-		bujo.eat();
-	}
+public class Main {
+        public static void main(String args[]){
+                System.out.println("hello world!");
+        }
+
+}

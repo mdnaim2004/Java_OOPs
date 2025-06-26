@@ -2,21 +2,25 @@ import java.util.Scanner;
 
 public class Prime {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int n = input.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int N;
 
-        for (int i = 2; i <= n; i++) {
-            boolean isPrime = true;
-            for (int j = 2; j <= Math.sqrt(i); j++) {
-                if (i % j == 0) {
-                    isPrime = false;
-                    break;
-                }
+        System.err.println("Enter a number N:");
+        if(N <= 1){
+            System.err.println("Its not prime");
+            return;
+        }
+        for(int i=0; i<=Math.sqrt(N); i++){
+            if(N % i==0){
+               int prime = 0;
+                break;
             }
-            if (isPrime)
-                System.out.print(i + " ");
-
-                
+        }
+        if(prime){
+            System.err.println("Its prime:");
+            else{
+                System.out.println("Not prime");
+            }
         }
     }
 }
