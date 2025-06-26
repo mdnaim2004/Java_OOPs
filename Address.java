@@ -1,14 +1,14 @@
-public class Address{
-    String city, state, house_no, road_no;
+public class Address {
+    String house_no, road_no, city, state;
 
-    public Address(String state, String city, String road_no, String house_no){
-        this.state = state;
-        this.city = city;
-        this.road_no = road_no;
+    public Address(String house_no, String road_no, String city, String state) {
         this.house_no = house_no;
+        this.road_no = road_no;
+        this.city = city;
+        this.state = state;
     }
 
-    public void showInfo(){
-        System.out.println("Address     : " +house_no +","+road_no+","+city+","+state);
+    public void display() {
+        System.out.println("Address: " + house_no + ", " + road_no + ", " + city + ", " + state);
     }
 }

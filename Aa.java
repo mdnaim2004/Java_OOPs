@@ -1,25 +1,34 @@
-public class Aa {
-    void showAa(){
-        System.out.println("Aa class properties");
-    }
+class Aa{
+	void showAa(){
+		System.out.println("Aa class methode!");
+	}
 }
 class Bb extends Aa{
-    void showBb(){
-        System.out.println("Bbclass propertis");
-    }
+	void showBb(){
+		System.out.println("Bb class methode!");
+	}
 }
 class Cc extends Aa{
-    void showCc(){
-        System.out.println("Cc class method");
-    }
-    public static void main (String[] args){
-        Aa obj1 = new Aa();
-        obj1.showAa();
+	void showCc(){
+		System.out.println("Cc class methode!");
+	}
 
-        Bb obj2 = new Bb();
-        obj2.showBb();
+	public static void main(String args[]){
+		Aa o1 = new Aa();
+		Bb o2 = new Bb();
+		Cc o3 = new Cc();
+		System.out.println("_______________");
 
-        Cc obj3 = new Cc();
-        obj3.showCc();
-    }
+		o1.showAa();
+
+		System.out.println("_______________");
+
+		o2.showAa();
+	 	o2.showBb();
+		System.out.println("_______________");
+
+		o3.showAa();
+		o3.showCc();
+		
+	}
 }

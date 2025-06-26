@@ -1,20 +1,19 @@
 public class Person {
     String name, gender;
     int age;
-    Address address; // Has-A relation
+    Address address;
 
-    public Person(String name, String gender, int age, Address address){
+    public Person(String name, String gender, int age, Address address) {
         this.name = name;
         this.gender = gender;
         this.age = age;
         this.address = address;
     }
 
-    public void showInfo(){
-        System.out.println("Name        : " + name);
-        System.out.println("Gender      : " + gender);
-        System.out.println("Age         : " + age);
-        address.showInfo();
-   
+    public void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Gender: " + gender);
+        System.out.println("Age: " + age);
+        address.display();
     }
 }

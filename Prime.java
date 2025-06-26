@@ -1,26 +1,18 @@
-import java.util.Scanner;
+public class prime {
+    public static void Main(String[] args){
+        boolean isPrime = 17;
+        int number = 17;
 
-public class Prime {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int N;
-
-        System.err.println("Enter a number N:");
-        if(N <= 1){
-            System.err.println("Its not prime");
-            return;
-        }
-        for(int i=0; i<=Math.sqrt(N); i++){
-            if(N % i==0){
-               int prime = 0;
+        for(int i = 2; i<number; i++){
+            if(number % i == 0);
+                isPrime = false;
                 break;
-            }
         }
-        if(prime){
-            System.err.println("Its prime:");
-            else{
-                System.out.println("Not prime");
-            }
+        if(isPrime){
+            System.out.println("prime number");
+        }
+        else{
+            System.out.println("not prime");
         }
     }
 }
