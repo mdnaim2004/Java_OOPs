@@ -1,15 +1,11 @@
-class Test{
-	final void show(int a,int b){
-		System.out.println("1");
+public class Test {
+    public static void main(String[] args) {
+        System.out.println("1");
+        Test t = new Test();
+        t.main(1);
+    }
 
-	}
-	void show(int b,int a,int c){
-		System.out.println("2");
-
-	}
-	public static void main(String []args){
-		Test t = new Test();
-		t.show(10,20);
-	}
-
+    public static void main(int a) {
+        System.out.println("2");
+    }
 }
