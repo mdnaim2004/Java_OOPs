@@ -1,20 +1,15 @@
-
-//super keyword
 public class Animal {
-    void sound(){
-        System.out.println("Animal sound");
+    void Animal(){
+        System.out.println("Animal constructor");
     }
 }
 class Dog extends Animal{
-    void sound(){
-        super.sound();
-        System.out.println("Dog barks");
+    Dog(){
+        super();
+        System.out.println("Dog constructor");
     }
     public static void main(String[] args) {
         Animal a = new Animal();
-        a.sound();     // call parent class method
+        a.Animal();
     }
 }
-
-
-
